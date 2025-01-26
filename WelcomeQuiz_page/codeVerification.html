@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verification</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #09131f;
+        color: #ffffff;
+      }
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .first-button {
+        background-color: #ffffff;
+        border-radius: 6px;
+        font-weight: 700;
+        color: black !important;
+        /* set the color of text */
+        padding: 10px 24px;
+        box-shadow: 0 0 2px var(--secondary-text-color);
+        transition: 0.2s ease-out;
+        text-align: center;
+        font-size: 1rem;
+        border: 0px;
+        margin-left: 85px;
+       
+      
+      }
+
+      .first-button:hover {
+        background-color: #ffffff;
+        color: #b2a9a9d4 !important;
+      }
+      .container{
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background-color: #111827;
+        flex-direction: column;
+        height: 250px;
+        width: 500px;
+        border-radius: 10px;
+      }
+      .box h1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+      }
+      .box p{
+        font-size: 1.2rem;
+      }
+      input{
+ margin: 5px 0px;
+ height: 35px;
+ padding: 7px;
+width: 272px;
+margin-bottom: 1cqh;
+border-radius: 5px;
+border: 0px;
+margin-top: 10px;
+}
+    </style>
+
+
+
+
+
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="box flex">
+        <h1>Verification</h1>
+        <p>Verification code sent***</p>
+        <form action="QuizesList.html">
+          <input
+            type="number"
+            name="verification"
+            id="verification"
+            placeholder="Enter verification code"
+          />
+          <br />
+          <button class="first-button" type="submit">Verify</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
