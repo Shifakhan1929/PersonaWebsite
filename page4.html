@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -41,17 +41,94 @@
         }
         .login-container button:hover {
             background-color: #0056b3;
-        }
+        } */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #09131f;
+        color: #ffffff;
+      }
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .first-button {
+        background-color: #ffffff;
+        border-radius: 6px;
+        font-weight: 700;
+        color: black !important;
+        /* set the color of text */
+        padding: 10px 24px;
+        box-shadow: 0 0 2px var(--secondary-text-color);
+        transition: 0.2s ease-out;
+        text-align: center;
+        font-size: 1rem;
+        border: 0px;
+        margin-top: 10px;
+        /* margin-left: 85px; */
+       
+      
+      }
+
+      .first-button:hover {
+        background-color: #ffffff;
+        color: #b2a9a9d4 !important;
+      }
+      .container{
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background-color: #111827;
+        flex-direction: column;
+        height: 250px;
+        width: 500px;
+        border-radius: 10px;
+      }
+      .box h1{
+        padding-top: 30px;
+        padding-bottom: 10px;
+
+      }
+    
+      input{
+ margin: 5px 0px;
+ height: 35px;
+ padding: 7px;
+width: 272px;
+margin-bottom: 1cqh;
+border-radius: 5px;
+border: 0px;
+margin-top: 10px;
+}
     </style>
+
+
+
+
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        
-            <input type="email" >
-            <input type="password" >
-         <a href="page6.html" target="_self"><button>Login</button></a>
-       
+    <div class="container flex">
+        <div class="box flex">
+            <h1>Login</h1>
+            <input type="email" placeholder="Email">
+            
+            <input type="message" placeholder="Password">
+            <a href="page6.html" target="_self" class="first-button">Login</a>
+
+        </div>
     </div>
 </body>
 </html>

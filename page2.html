@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Odyssey</title>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        }
+
+        body{
+            background-color: #09131F;
+            color: #FFFFFF;
+        }
+
+        a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: 1555px;
+  /* margin-inline: auto; */
+  margin-inline: 20px;
+  padding-inline: 20px;
+  overflow: hidden;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+        .first-button{
+  background-color:#FFFFFF;
+  border-radius: 6px;
+  font-weight: 700;
+  color: black !important;
+  /* set the color of text */
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+
+.first-button:hover{
+  background-color:#FFFFFF;
+  color:#b2a9a9d4 !important;
+ 
+
+}
+.buttons{
+   justify-content: flex-end;
+   gap:5px;
+   margin-top: 50px;
+}
+.text{
+    flex-direction: column;
+    gap: 20px;
+   align-items: center;
+    justify-content: center;
+    height: 600px;
+   
+
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+p{
+    width: 600px;
+    text-align: center;
+}
+
+    </style>
+
+
 </head>
 <body>
-    <div><h1>Welcome to the Quiz Odyssey</h1></div>
-    <a href="page3.html" target="_self">
-        <button>Login/Signup</button>
-    </a>
+    <div class="buttons flex container">
+        <a href="page3.html" target="_blank" class="first-button">Sign Up</a>
+        <a href="page3.html" target="_blank" class="first-button">Login</a>
+    </div>
+   <div class="text flex">
+    <h1>Welcome to the Quiz Odyssey</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita consectetur ratione quis, quae delectus, odit sapiente cumque facere odio cum magni voluptates harum.
+    </p>
+    <a href="page3.html" target="_self" class="first-button">Login/Sign Up</a>
+   </div>
+   
+    
 </body>
 </html>

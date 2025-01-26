@@ -3,13 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>SignUp</title>
+    <style>
+         *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        }
+
+        body{
+            background-color: #111827;
+            color: #FFFFFF;
+        }
+
+        a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: 1555px;
+  /* margin-inline: auto; */
+  margin-inline: 20px;
+  padding-inline: 20px;
+  overflow: hidden;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+        .first-button{
+  background-color:#FFFFFF;
+  border-radius: 5px;
+  font-weight: 700;
+  color: black !important;
+  /* set the color of text */
+  padding: 10px 30px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+
+.first-button:hover{
+  background-color:#FFFFFF;
+  color:#b2a9a9d4 !important;
+
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+}
+.box{
+    flex-direction: column;
+    background-color: #09131F;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+.box h1{
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.input-section{
+flex-direction: column;
+width: 1500px;
+padding: 15px;
+}
+
+input{
+ margin: 5px 0px;
+ height: 35px;
+ padding: 7px;
+width: 272px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 0px;
+}
+span{
+    margin-top:10px;
+}
+ </style>
+
+
+
+
 </head>
 <body>
-    <div><H1>Signup</H1></div>
-     <a href="page5.html" target="_self">
-        <button>Signup</button>
-    </a><br><br>
-    <span>Already have an account <a href="page4.html" target="_self" >Login</span>
+   <div class="container flex">
+    <div class="box flex">
+        <h1>SignUp</h1>
+        <div class="input-section flex">
+           
+            <input type="name" placeholder="Username">
+          
+            <input type="email" placeholder="Email">
+            
+            <input type="message" placeholder="Password">
+            <input type="message" placeholder="Confirmation Password">
+        </div>
+    
+        <a href="page5.html" target="_self" class="first-button">Signup</a>
+        <span>Already have an account <a href="page4.html" target="_self" >Login</span>
+
+    </div>
+   </div>
+
 </body>
 </html>
