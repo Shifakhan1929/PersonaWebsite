@@ -146,6 +146,10 @@ font-size: 1.5rem;
   font-size: 1.5rem;
  font-weight: 200;
 }
+.button1{
+  font-size: 1.2rem;
+font-weight: 700;
+}
 
 
  /* cummnity-section------- */
@@ -181,8 +185,10 @@ flex-direction: column;
 gap: 10px;
 }
 .button2{
-max-width: 180px;
+max-width: 230px;
 margin-top: 20px;
+font-size: 1.2rem;
+font-weight: 700;
 
 }
 
@@ -199,16 +205,17 @@ width: 700px;
 
 
 .event-section{
-  height: 480px;
+  height: 530px;
   background-color: #09131F;
   color: #FFFFFF;
 }
 
 .event-section h2{
 text-align: center;
-font-size: 1.5rem;
+font-size: 1.8rem;
+padding-top: 80px;
 /* margin-top: 10px; */
-margin-bottom: 30px;
+padding-bottom: 30px;
 }
 
 .event-card{
@@ -230,7 +237,7 @@ border: 0px solid rgba(255, 255, 255, 0);
 
 .card-img{
  border-radius: 10px 10px 0 0; 
- border: 2px solid white;
+ border: 0px solid white;
   height: 200px;
   padding: 20px 0px 15px;
   background-size: cover;
@@ -260,16 +267,21 @@ border: 0px solid rgba(255, 255, 255, 0);
         /* 4-community----------*/
 .four-com{
 background-color:#111827 ;
-height: 600px;
+height: 630px;
 }
 .four-com h2{
 color: #FFFFFF;
 text-align: center;
+font-size: 1.8rem;
+padding-top: 80px;
+padding-bottom: 20px;
 }
 .four-com-section{
 flex-wrap: wrap;
 padding-top: 20px;
-gap: 350px;
+gap: 100px;
+justify-content: center;
+align-items: center;
 
 }
 .left-com{
@@ -287,11 +299,15 @@ gap: 10px;
 
 .first-com{
 background-color: #09131F;
-width:530px;
+width:600px;
 height: 200px;
 color: #FFFFFF;
 margin-top: 1dvb0px;
 border-radius: 10px;
+font-size: 1.2rem;
+font-style: italic;
+justify-content: center;
+
 
 }
 
@@ -302,15 +318,17 @@ border-radius: 10px;
 
 
 .teams{
-  height: 500px ;
+  height: 530px ;
   background-color: #09131F;
   color: #FFFFFF;
 }
 
 .teams h2{
- font-size: 1.5rem;
+ font-size: 1.8rem;
  font-weight: 700;
  text-align: center;
+ padding-top: 80px;
+ padding-bottom: 10px;
 }
 .teams p{
 text-align: center;
