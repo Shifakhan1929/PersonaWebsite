@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Coordinators</title>
+    <style>
+   *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        }
+
+        body{
+            background-color: #111827;
+            color: #FFFFFF;
+        }
+
+        a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: 1555px;
+  /* margin-inline: auto; */
+  margin-inline: 20px;
+  padding-inline: 20px;
+  overflow: hidden;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+        .first-button{
+  background-color:#FFFFFF;
+  border-radius: 6px;
+  font-weight: 700;
+  color: black !important;
+  /* set the color of text */
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+
+.first-button:hover{
+  background-color:#FFFFFF;
+  color:#b2a9a9d4 !important;
+ 
+
+}
+.container-section{
+    padding-top: 20px;
+   text-align: center;
+}
+.container-section h1{
+    align-items: center;
+}
+.boxes{
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.box{
+    background-color: #09131F;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+  
+    
+}
+    </style>
 </head>
 <body>
-    <h1> List Of Student Coordinators</h1>
+    <div class="container-section">
+        <h1>Student Coordinator</h1>
+        <div class="boxes flex">
+            <div class="box">Person1</div>
+        <div class="box">Person2</div>
+        <div class="box">Person3</div>
+        <div class="box">Person4</div>
+        <div class="box">Person5</div>
+        <div class="box">Person6</div>
+        </div>
+      </div>
 </body>
 </html>
