@@ -48,7 +48,8 @@ ul{
 }
 
 .first-button:hover{
-  background-color:var(--accent-color-dark);
+  background-color:#FFFFFF;
+  color:#b2a9a9d4 !important;
  
 
 }
