@@ -53,51 +53,57 @@ html::-webkit-scrollbar-thumb {
     /* clip-path: inset(0 0  0 0); */
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s ease-in-out;
+  animation-range: entry 0% cover 40%;
+  animation-timeline: view();
+}
+
+.slide-in-left {
+  animation-range: entry 10% cover 40%;
+  animation: slideInLeft 2s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoomIn 3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+ 
 .appeared{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-    /* scale: 0.5; */
-    /* clip-path: inset(100% 100% 0 0); */
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-    /* scale: 1; */
-    /* clip-path: inset(0 0  0 0); */
-  }
-}
-.appeared1{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    /* transform: translateX(-100px); */
-    /* scale: 0.5; */
-     clip-path: inset(100% 100% 0 0); 
-  }
-  to{
-    opacity: 1;
-    /* transform: translateX(0px); */
-    /* scale: 1; */
-     clip-path: inset(0 0  0 0); 
-  }
-}
-.appeared2{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -485,77 +491,46 @@ transition: 0.2s ease-in-out;
         /* 4-community----------*/
 .four-com{
 background-color:#111827 ;
-height: 1200px;
+height: 775px;
+}
+.four-com-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.community-item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.community-item img {
+  width: 100px;
+  height: 300px;
+
+  margin-bottom: 10px;
+}
+.community-item a {
+  color: #09131F;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.community-item a:hover {
+  color: #2b3dda;
 }
 .four-com h2{
 color: #FFFFFF;
 text-align: center;
 font-size: 1.9rem;
-padding-top: 80px;
+padding-top: 40px;
 padding-bottom: 20px;
-}
-.four-com-section{
-flex-wrap: wrap;
-padding-top: 20px;
-/* justify-content: center;
-align-items: center; */
-gap: 100px;
-
-}
-.left-com{
-/* flex-direction: column; */
-/* max-width: 50%; */
-justify-content: flex-start;
-align-items: center;
-gap: 100px;
-margin-left: 130px;
-margin-top: 30px;
-
-}
-.right-com{
-  margin-left: 400px;
-justify-content: flex-end;
-align-items: center;
-gap: 100px;
-
-}
-
-.first-com{
-/* background-color: #09131F; */
-width:400px;
-height: 365px;
-color: #FFFFFF;
-margin-top: 1px;
-border-radius: 10px;
-font-size: 1.2rem;
-font-style: italic;
-justify-content: center;
-flex-direction: column;
-box-shadow: 2px 2px 10px whitesmoke;
-
-}
-.first-img{
-  border-radius: 10px 10px 0 0; 
- border: 0px solid white;
-  height: 200px;
-  padding: 20px 0px 15px;
-  background-size: cover;
-}
-.first-com img{
-  width:400px;
-  height: 400px;
-  border-radius: 10px;
-
-}
-.first-com a{
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin-top: 10px;
-  transition: 0.2s ease-out;
-}
-.first-com a:hover{
-  color: #ffd226;
-  filter: drop-shadow(2px 2px 9px white);
 }
 
 
