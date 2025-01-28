@@ -94,7 +94,8 @@ html::-webkit-scrollbar-thumb {
 
 .slide-in-left {
   animation-range: entry 10% cover 40%;
-  animation: slideInLeft 2s ease-in-out;
+  animation: slideInLeft 2s ease;
+  animation-timeline: view();
 }
 
 .zoom-in {
